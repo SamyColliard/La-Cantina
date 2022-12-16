@@ -4,17 +4,18 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     font-family: "Nunito", sans-serif;
   }
   
   .Cards .openModalBtn {
     width: 200px;
-    height: 40px;
+    height: 200px;
     border: none;
     border-radius: 6px;
-    background-color: cornflowerblue;
-    color: white;
+    background-image: url("../assets/c3po.jpg");
+    background-size: cover;
+    color: rgb(0, 0, 0);
     cursor: pointer;
   }
   body {

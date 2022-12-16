@@ -10,14 +10,14 @@ function App() {
 
     <div className="">
 
-      <Header />
+      {/* <Header />
 
       <Characters />
 
       <Routes>
     			  <Route path="/description" element={<Description />} />
-			</Routes>
-
+			</Routes> */}
+      <Cards />
 
     </div>
     

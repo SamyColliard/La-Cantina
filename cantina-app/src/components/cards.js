@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./cards.css";
 import Modal from "./modal";
 
+
 function Cards() {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -14,7 +15,7 @@ function Cards() {
           setModalOpen(true);
         }}
       >
-        Open
+        
       </button>
 
       {modalOpen && <Modal setOpenModal={setModalOpen} />}

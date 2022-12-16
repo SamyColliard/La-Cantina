@@ -1,5 +1,6 @@
 import React from "react";
 import "./modal.css";
+import c3pCute from "../assets/c3p-cute.jpg"
 
 function Modal({ setOpenModal }) {
   return (
@@ -18,7 +19,8 @@ function Modal({ setOpenModal }) {
           <h1>name of person</h1>
         </div>
         <div className="body">
-          <p>descriptions</p>
+        <img className="imgHot" src={c3pCute}/>
+          <p></p>
         </div>
         <div className="footer">
           <button
