@@ -3,17 +3,18 @@ import "./cards.css";
 import {Modal, Modal1, Modal2} from "./modal";
 
 
-function Cards() {
+function Cards({key,src,alt}) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="Cards">
+      <img onClick={() => {
+          setModalOpen(true);
+        }} src={src} alt="c3p-o"/>
       
       <button
         className="openModalBtn"
-        onClick={() => {
-          setModalOpen(true);
-        }}
+        
       >
         
       </button>
