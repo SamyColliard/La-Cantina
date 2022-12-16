@@ -12,11 +12,14 @@ function App() {
 
       <Header />
 
+      <Description />
+
       <Characters />
 
       <Routes>
     			  <Route path="/description" element={<Description />} />
 			</Routes>
+
 
 
     </div>

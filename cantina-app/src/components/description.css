@@ -1,0 +1,18 @@
+.App-description {
+   text-decoration: none;
+}
+
+#description p {
+    font-size: 45px;
+    text-align: justify;
+    color: #FC0;
+    font-family:"Pathway Gothic One", sans-serif;
+    text-shadow: rgb(8, 7, 2) 1px 0 10px;
+    animation: fadeIn 25s;
+   
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
