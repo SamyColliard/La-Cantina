@@ -4,7 +4,7 @@ import './App.css';
 import Header from "./components/header";
 import Characters from './screens/charactersTatooine';
 import Description from "./components/description";
-
+import Cards from "./components/cards"
 function App() {
   return (
 

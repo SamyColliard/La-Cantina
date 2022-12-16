@@ -1,19 +1,25 @@
-import { useState } from 'react'
-import 'cards.css';
-import Modal from './modal';
-
+import React, { useState } from "react";
+import "./cards.css";
+import Modal from "./modal";
 
 function Cards() {
+  const [modalOpen, setModalOpen] = useState(false);
 
-	const [openModal, setOpenModal] = useState(false)
-	
-	return (
-		<div className="Cards">
-			<h1>heyyyyyyyy salut a tous les amis</h1>
-			<button className="openModalBtn" onClick={() => {setOpenModal(true);}}>Open</button>
-			{openModal && <Modal closeModal={setOpenModal} />}
-		</div>
-	);
+  return (
+    <div className="Cards">
+      
+      <button
+        className="openModalBtn"
+        onClick={() => {
+          setModalOpen(true);
+        }}
+      >
+        Open
+      </button>
+
+      {modalOpen && <Modal setOpenModal={setModalOpen} />}
+    </div>
+  );
 }
 
 export default Cards;
