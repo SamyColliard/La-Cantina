@@ -1,21 +1,17 @@
 .Cards {
-    z-index: 9000;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
-    flex-direction: column;
     font-family: "Nunito", sans-serif;
   }
   
   .Cards .openModalBtn {
     width: 200px;
-    height: 40px;
+    height: 200px;
     border: none;
     border-radius: 6px;
-    background-color: cornflowerblue;
-    color: white;
-    cursor: pointer;
+    background-image: url("../assets/c3p-cute.jpg");
+    background-size: cover;
+    color: rgb(255, 255, 255);
   }
   body {
     padding: 0;
