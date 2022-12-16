@@ -12,6 +12,8 @@ function App() {
 
       <Header />
 
+      <Description />
+
       <Characters />
 
       <Routes>
