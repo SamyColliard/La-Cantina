@@ -1,13 +1,28 @@
-import 'cards.css'
-import Modal from 'react-modal';
+import React, { useState } from "react";
+import "./cards.css";
+import Modal from "./modal";
 
+function Cards() {
+  const [modalOpen, setModalOpen] = useState(false);
 
-const cardImage = (props) => {
+  return (
+    <div className="Cards">
+      
+      <button
+        className="openModalBtn"
+        onClick={() => {
+          setModalOpen(true);
+        }}
+      >
+        Open
+      </button>
 
-	return (
-        <img src="#" onChange={() => this.setState({showModal: true})}/>
-	)
+      {modalOpen && <Modal setOpenModal={setModalOpen} />}
+    </div>
+  );
 }
+
+export default Cards;
 
 
 
