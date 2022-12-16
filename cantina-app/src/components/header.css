@@ -1,10 +1,154 @@
-.App-header {
-    width: 100%;
-    height: auto;
-    background-image: url("../assets/banner.png");
+
+ .App-header {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: fixed;
+    background-image: url("../assets/banner.png");
+    font-family: 'Star Jedi', arial;
+    font-size: 50px;
+    text-shadow: #FC0 2px 0 18px;
+} 
+
+.Title {
+    opacity: 0.88;
+    color: black;
 }
 
 
+/* -------------------- CSS SMOKES ----------------------- */
+
+.fumée {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: url("../assets/fumee.png");
+    background-size: 1000px 500px;
+  }
+  
+ #fumée1 {
+    z-index: 1000;
+    opacity: 0.4;
+    top: -150px;
+    animation: animatefumée 30s linear infinite;
+  }
+  
+ #fumée2 {
+    z-index: 999;
+    opacity: 0.1;
+   top: -120px;
+    animation: animatefumée 25s linear infinite !important;
+  }
+  
+   #fumée3 {
+    z-index: 1000;
+    opacity: 0.2;
+    top: -75px;
+    animation: animatefumée 24s linear infinite;
+  } 
+  
+   #fumée4 {
+    z-index: 999;
+    opacity: 0.7;
+    top: -114px;
+    animation: animatefumée 22s linear infinite;
+  } 
+  
+  @keyframes animatefumée {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  } 
+  /* ---------------- CSS LUCIOLES ------------------------------- */
+
+  .box {
+    width: 100%;
+  }
+  
+  .luciole {
+    background-color: #affc41;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #affc41, 0 0 20px #affc41;
+    offset-path: path('M0.2,60.4c86.4-43.3,192.1-26.8,285.9-3.7s190.2,53.1,285.3,35.9c78.9-14.3,148.8-60,226.4-79.9 c129.1-33.2,264.5,7.5,1091.6,350.7');
+      animation: luciolePath linear alternate infinite;
+  }
+  
+  .nth1 {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    animation-duration: 16s;
+    top: -500px;
+    z-index: 800;
+    background-color: #ffff3f;
+    box-shadow: 0 0 10px #ffff3f, 0 0 20px #ffff3f;
+  }
+  
+  .nth2 {
+    width: 8px;
+    height: 8px;
+    animation-duration: 12s;
+    animation-delay: 200ms;
+    position: relative;
+    top: -320px;
+  }
+  
+  .nth3 {
+    width: 8px;
+    height: 8px;
+    animation-duration: 20s;
+    animation-delay: 600ms;
+position: relative;
+top: -80px;
+background-color: #ffff3f;
+box-shadow: 0 0 10px #ffff3f, 0 0 20px #ffff3f;
+  }
+  .nth4 {
+    width: 8px;
+    height: 8px;
+    animation-duration: 30s;
+    animation-delay: 500ms;
+position: relative;
+top: -280px;
+  }
+  .nth5 {
+    width: 8px;
+    height: 8px;
+    animation-duration: 15s;
+    animation-delay: 100ms;
+position: relative;
+top: -180px;
+background-color: #ffff3f;
+box-shadow: 0 0 10px #ffff3f, 0 0 20px #ffff3f;
+  }
+  .nth6 {
+    width: 8px;
+    height: 8px;
+    animation-duration: 35s;
+    animation-delay: 800ms;
+position: relative;
+top: -80px;
+  }
+  
+  @keyframes luciolePath {
+    100% {
+      offset-distance: 100%;
+    }
+  }
