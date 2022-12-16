@@ -75,9 +75,9 @@ function PopUp() {
   return (
     <div className="popup hide">
       <div className="popup_inner">
-        PAYEZ TOUT DE SUITE
         <button onClick={() => (stateButton(), hidePopUp())}>PAYEZ</button>
         <button onClick={() => hidePopUp()}>Continuer sans Payer</button>
+        <p>SI VOUS VOULEZ ACCEDER A NOTRE SITE PAYEZ TOUT DE SUITE ! <br/> <br/>Vous aurez un accès V.I.P à nos cartes qui arrivent... plus tard... <br/><br/> enfin ouais t'inquiète.</p>
       </div>
     </div>
   );
