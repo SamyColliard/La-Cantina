@@ -23,14 +23,16 @@ function ScrollText() {
             arrivés à nos fins.
           </p>
           <p>
-            During the battle, Rebel spies managed to steal secret plans to the
-            Empire’s ultimate weapon, the DEATH STAR, an armored space station
-            with enough power to destroy an entire planet.
+            Aujourd’hui nous allons vous dévoiler les secrets de notre site et
+            il y’a une chose dont vous devez vous souvenir : quand on vous dis
+            de ne pas cliquer sur un lien ne le faites pas ou votre adresse
+            email risque de sauter, comme Valter par exemple.
           </p>
           <p>
-            Pursued by the Empire’s sinister agents, Princess Leia races home
-            aboard her starship, custodian of the stolen plans that can save her
-            people and restore freedom to the galaxy…
+            Mesdames et Messieurs, accrochez vous à vos chaises de bureau (même
+            si vous êtes déjà dessus de 9h à 17h30 tous les jours pour regarder
+            Abdou créer des dossiers “poulet”) vous vous apprêtez à rencontrer
+            le DARK VADOR des temps modernes.
           </p>
         </div>
       </section>
