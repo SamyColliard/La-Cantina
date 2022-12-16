@@ -1,0 +1,143 @@
+.home div h1{
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .home div h1.visi{
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+
+
+/*               SUN                */
+
+.sun{
+    position: relative;
+    bottom: 300px;
+    right: 2900px;
+    z-index: 1;
+    height: 0;
+}
+
+#footer .sun img{
+    width: 2700px;
+    scale: 1;
+    animation: shake 0;
+    opacity : 1;
+}
+
+#footer .sun img:hover{
+    scale: 1;
+    opacity : 1;
+    animation: shake 0;
+}
+
+
+
+/*               EARTH              */
+
+.earth {  
+    position: relative;
+    bottom: -300px;
+    right: -1000px;
+    z-index: 2;
+    height: 0;
+    
+}
+
+.earth img {  
+    width: 600px;
+}
+
+
+
+/*             TATOOINE             */
+
+.tatooine { 
+    position: relative;
+    bottom: -100px;
+    right: -940px;
+    z-index: 1;
+    height: 0;
+}
+
+.tatooine img {  
+    width: 330px;
+}
+
+
+
+/*            DAGOBAH             */
+
+.dagobah { 
+    position: relative;
+    bottom: -10px;
+    right: -10px;
+    z-index: 5;
+    height: 0;
+}
+
+.dagobah img {  
+    width: 80px;
+}
+
+
+
+.coruscant { 
+    position: relative;
+    bottom: -30px;
+    right: -200px;
+    z-index: 0;
+    height: 0;
+}
+
+.coruscant img {  
+    width: 151px;
+}
+
+
+
+/*        ANIMATION HOVER        */
+
+.home div img{
+    scale: 1;
+    opacity : 1;
+    transition: scale 1s, opacity 2s;
+}
+
+.home div img:hover{
+    scale: 1.1;
+    opacity : 90%;
+    transition: scale 0.8s, opacity 2s;
+    /* animation: shake 0.2s; */
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+      transform: translate3d(-1px, 1px, 0);
+    }
+  
+    20%,
+    80% {
+      transform: translate3d(1px, -1px, 0);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-1px, 1px, 0);
+    }
+  
+    40%,
+    60% {
+      transform: translate3d(1px, -1px, 0);
+    }
+  }
+
+
+ 

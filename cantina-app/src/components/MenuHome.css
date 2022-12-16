@@ -1,0 +1,15 @@
+#footer {
+    background-image: url("../assets/stars.png");
+    display: flex;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* t un bon antoine */ 
+.miseEnPageTest{
+display: flex;
+flex-direction: column-reverse;
+align-items: flex-start;
+height: 2000px;
+}
