@@ -15,7 +15,6 @@ const Description = () => {
 
             La planète est également devenue connue pour ses courses de modules comme la Classique de Boonta Eve. Les Jawa, un peuple de ferrailleur, et les Tusken, un peuple de guerriers sanguinaires, étaient des espèces originaires de la planète. 
             </p>
-
     </div>
 
             
