@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./cards.css";
-import Modal from "./modal";
+import {Modal, Modal1, Modal2} from "./modal";
 
 
 function Cards() {
@@ -23,8 +23,46 @@ function Cards() {
   );
 }
 
-export default Cards;
+function Cards1() {
+  const [modalOpen, setModalOpen] = useState(false);
 
+  return (
+    <div className="Cards">
+      
+      <button
+        className="openModalBtn"
+        onClick={() => {
+          setModalOpen(true);
+        }}
+      >
+        
+      </button>
+
+      {modalOpen && <Modal1 setOpenModal={setModalOpen} im />}
+    </div>
+  );
+}
+
+function Cards2() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  return (
+    <div className="Cards">
+      
+      <button
+        className="openModalBtn"
+        onClick={() => {
+          setModalOpen(true);
+        }}
+      >
+        
+      </button>
+
+      {modalOpen && <Modal2 setOpenModal={setModalOpen} />}
+    </div>
+  );
+}
+export {Cards, Cards1, Cards2};
 
 
 

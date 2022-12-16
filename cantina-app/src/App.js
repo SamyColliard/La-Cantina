@@ -10,16 +10,16 @@ function App() {
 
     <div className="">
 
-      {/* <Header />
+       <Header /> 
 
       <Description />
 
-      <Characters />
+      {/* <Characters />
 
       <Routes>
     			  <Route path="/description" element={<Description />} />
 			</Routes> */}
-      <Cards />
+      
 
 
     </div>

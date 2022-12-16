@@ -1,10 +1,6 @@
 .Cards {
-    z-index: 9000;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
     font-family: "Nunito", sans-serif;
   }
   
@@ -13,10 +9,9 @@
     height: 200px;
     border: none;
     border-radius: 6px;
-    background-image: url("../assets/c3po.jpg");
+    background-image: url("../assets/c3p-cute.jpg");
     background-size: cover;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
+    color: rgb(255, 255, 255);
   }
   body {
     padding: 0;
