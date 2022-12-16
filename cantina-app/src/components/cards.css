@@ -17,3 +17,6 @@
     padding: 0;
     margin: 0;
   }
+  .card-img {
+    width: 200px;
+  }

@@ -12,11 +12,17 @@ const Characters = () => {
         fetch("https://miadil.github.io/starwars-api/api/id/2.json")
 			.then((res) => res.json())
 			.then((res) => console.log(res) || setCharactersInfo(res))
+		fetch("https://miadil.github.io/starwars-api/api/id/16.json")
+			.then((res) => res.json())
+			.then((res) => console.log(res) || setCharactersInfo1(res))
+		fetch("https://miadil.github.io/starwars-api/api/id/1.json")
+			.then((res) => res.json())
+			.then((res) => console.log(res) || setCharactersInfo2(res))
 	}, [])
     return (
 		<div>
 			<Header />
-			<Description charactersInfo={charactersInfo} />
+			<Description charactersInfo={charactersInfo}  charactersInfo1={charactersInfo1} charactersInfo2={charactersInfo2}/>
 		</div>
 		// <div className="charactersBlock">
  		// 	{charactersInfo

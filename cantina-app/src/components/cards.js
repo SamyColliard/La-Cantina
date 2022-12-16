@@ -8,56 +8,39 @@ function Cards({key,src,alt}) {
 
   return (
     <div className="Cards">
-      <img onClick={() => {
+      <img className="card-img" onClick={() => {
           setModalOpen(true);
         }} src={src} alt="c3p-o"/>
-      
-      <button
-        className="openModalBtn"
-        
-      >
-        
-      </button>
 
       {modalOpen && <Modal setOpenModal={setModalOpen} />}
     </div>
   );
 }
 
-function Cards1() {
+function Cards1({key,src,alt}) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="Cards">
-      
-      <button
-        className="openModalBtn"
-        onClick={() => {
+          <img className="card-img" onClick={() => {
           setModalOpen(true);
-        }}
-      >
-        
-      </button>
+        }} src={src} alt="c3p-o"/>
+
 
       {modalOpen && <Modal1 setOpenModal={setModalOpen} im />}
     </div>
   );
 }
 
-function Cards2() {
+function Cards2({key,src,alt}) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="Cards">
-      
-      <button
-        className="openModalBtn"
-        onClick={() => {
+          <img className="card-img" onClick={() => {
           setModalOpen(true);
-        }}
-      >
-        
-      </button>
+        }} src={src} alt="c3p-o"/>
+
 
       {modalOpen && <Modal2 setOpenModal={setModalOpen} />}
     </div>
