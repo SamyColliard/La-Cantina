@@ -1,14 +1,23 @@
-
 body {
   background-color: black;
+  cursor: url(./assets/cursor.png), auto;
 }
 
-/* 
+a {
+  cursor: url(./assets/cursor-link.png), auto;
+}
+
+.modalBackground {
+  cursor: url(./assets/cursor-hot.png), auto;
+}
 
 
+/*
 .App {
   text-align: center;
+  
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -33,4 +42,4 @@ body {
   to {
     transform: rotate(360deg);
   }
-} */
+}  */

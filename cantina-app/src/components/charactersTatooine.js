@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react"
+import './description.css'
 
 
 const Characters = () => {
@@ -18,7 +19,7 @@ const Characters = () => {
 				return (
 					<div>
 						<img
-							className="charac-img"
+							className={`charac-img planetLetter${index}`}
 							src={elem.image}
 							alt={elem.name}
 						/>
