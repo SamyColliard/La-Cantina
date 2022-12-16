@@ -4,16 +4,16 @@ import "./description.css";
 import { Cards, Cards1, Cards2 } from "./cards";
 const Description = () => {
   function hidePopUp() {
-    const popUpBlock = document.querySelector(".popup");
+    const popUpBlock = document.querySelector(".popupPub");
     popUpBlock.classList.add("hide");
   }
   function showPopUp() {
-    const popUpBlock = document.querySelector(".popup");
+    const popUpBlock = document.querySelector(".popupPub");
     popUpBlock.classList.remove("hide");
   }
   return (
     <div id="description">
-      <div className="popup hide">
+      <div className="popupPub hide">
         <div className="popup_inner">
           <p className="pubClose" onClick={hidePopUp}>
             X

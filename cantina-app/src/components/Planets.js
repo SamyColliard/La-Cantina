@@ -9,7 +9,6 @@ function Planets(props) {
     planetTitleDom.classList.toggle("visi");
   };
 
-  console.log(document.getElementsByClassName("dagobah")[0]);
   // const namePlaneteSpan = (planet) => {
   //   let result = [];
   //   let dom = document.querySelector(".earthTitle");
