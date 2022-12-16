@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "./Planets.css";
 
@@ -7,6 +8,8 @@ function Planets(props) {
     const planetTitleDom = document.querySelector(planetTitle);
     planetTitleDom.classList.toggle("visi");
   };
+
+  console.log(document.getElementsByClassName("dagobah")[0]);
   // const namePlaneteSpan = (planet) => {
   //   let result = [];
   //   let dom = document.querySelector(".earthTitle");
@@ -21,11 +24,13 @@ function Planets(props) {
   return (
     <div className={props.name}>
       <h1 className={props.classTitre}>{props.name}</h1>
-      <img
-        onMouseEnter={() => namePlanetPop(props.classTitre)}
-        onMouseOut={() => namePlanetPop(props.classTitre)}
-        src={props.img}
-      />
+      <Link to={props.link}>
+        <img
+          onMouseEnter={() => namePlanetPop(props.classTitre)}
+          onMouseOut={() => namePlanetPop(props.classTitre)}
+          src={props.img}
+        />
+      </Link>
     </div>
   );
 }

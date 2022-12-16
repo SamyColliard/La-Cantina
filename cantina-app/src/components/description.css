@@ -1,0 +1,49 @@
+.div1 {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.letter-style {
+  font-size: 8rem;
+  padding: 0;
+  margin: 0;
+}
+
+#description p {
+  font-size: 45px;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 5rem;
+  letter-spacing: 0.3rem;
+  line-height: 4rem;
+  color: #fc0;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-shadow: rgb(8, 7, 2) 1px 0 10px;
+  animation: fadeIn 25s;
+}
+
+.charac-img {
+  width: 10rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.linkPub {
+  color: blue;
+  text-decoration: underline;
+}
+.pubClose {
+  position: absolute;
+  left: 850px;
+  top: -80px;
+}

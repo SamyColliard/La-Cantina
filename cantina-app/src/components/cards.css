@@ -1,0 +1,19 @@
+.Cards {
+    display: flex;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .Cards .openModalBtn {
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 6px;
+    background-image: url("../assets/c3p-cute.jpg");
+    background-size: cover;
+    color: rgb(255, 255, 255);
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }

@@ -35,6 +35,7 @@ function PopUp() {
       menuHome.classList.add("visi");
     }
     let scrollInfini = "PAYEZ PAYEZ PAYEZ";
+    document.body.style.overflow = "hidden";
     o.top < -3800 && stateButtonPayez === false
       ? showPopUp()
       : (crawl.innerHTML += "");

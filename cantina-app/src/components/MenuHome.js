@@ -14,9 +14,19 @@ function MenuHome() {
     <footer id="footer">
       <Planets img={earth} name="earth" classTitre="earthTitle" />
 
-      <Planets img={tatooine} name="tatooine" classTitre="tatooineTitle" />
+      <Planets
+        img={tatooine}
+        name="tatooine"
+        classTitre="tatooineTitle"
+        link="/tatooine"
+      />
 
-      <Planets img={dagobah} name="dagobah" classTitre="dagobahTitle" />
+      <Planets
+        img={dagobah}
+        name="dagobah"
+        classTitre="dagobahTitle"
+        link="/outro"
+      />
 
       <Planets img={coruscant} name="coruscant" classTitre="coruscantTitle" />
 

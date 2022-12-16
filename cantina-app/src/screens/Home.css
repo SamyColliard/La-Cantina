@@ -1,0 +1,15 @@
+.menu-home {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.menu-home.visi {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.scrollTextBlock {
+  position: relative;
+  z-index: 10;
+}
