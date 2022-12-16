@@ -12,6 +12,8 @@ const Header = (props) => {
 				</h1>
 			</div>
 
+
+
   {/* SMOKES EFFECTS */}
 
 			 <div className="fumée" id="fumée1"></div>
