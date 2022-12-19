@@ -1,0 +1,9 @@
+#footer {
+  background-image: url("../assets/stars.png");
+  display: flex;
+  height: 1300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* t un bon antoine */

@@ -3,60 +3,44 @@ import "./cards.css";
 import {Modal, Modal1, Modal2} from "./modal";
 
 
-function Cards() {
+function Cards({key,src,alt}) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="Cards">
-      
-      <button
-        className="openModalBtn"
-        onClick={() => {
+      <img className="card-img" onClick={() => {
           setModalOpen(true);
-        }}
-      >
-        
-      </button>
+        }} src={src} alt="c3p-o"/>
 
       {modalOpen && <Modal setOpenModal={setModalOpen} />}
     </div>
   );
 }
 
-function Cards1() {
+function Cards1({key,src,alt}) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="Cards">
-      
-      <button
-        className="openModalBtn"
-        onClick={() => {
+          <img className="card-img" onClick={() => {
           setModalOpen(true);
-        }}
-      >
-        
-      </button>
+        }} src={src} alt="c3p-o"/>
+
 
       {modalOpen && <Modal1 setOpenModal={setModalOpen} im />}
     </div>
   );
 }
 
-function Cards2() {
+function Cards2({key,src,alt}) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="Cards">
-      
-      <button
-        className="openModalBtn"
-        onClick={() => {
+          <img className="card-img" onClick={() => {
           setModalOpen(true);
-        }}
-      >
-        
-      </button>
+        }} src={src} alt="c3p-o"/>
+
 
       {modalOpen && <Modal2 setOpenModal={setModalOpen} />}
     </div>

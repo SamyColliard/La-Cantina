@@ -1,42 +1,133 @@
-.App-description {
-   text-decoration: none;
-}
-
 .div1 {
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
 }
 
 .letter-style {
-    font-size:8rem;
-    padding: 0;
-    margin: 0;
+  font-size: 8rem;
+  padding: 0;
+  margin: 0;
 }
 
 #description p {
-    
-    font-size: 45px;
-    text-align: justify;
-    margin: 0 auto;
-    padding:  5rem;
-    letter-spacing: 0.3rem;
-    line-height: 4rem;
-    color: #FC0;
-    font-family:"Pathway Gothic One", sans-serif;
-    text-shadow: rgb(8, 7, 2) 1px 0 10px;
-    animation: fadeIn 25s;
-   
+  font-size: 45px;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 5rem;
+  letter-spacing: 0.3rem;
+  line-height: 4rem;
+  color: #fc0;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-shadow: rgb(8, 7, 2) 1px 0 10px;
+  animation: fadeIn 25s;
 }
 
 .charac-img {
-    width: 10rem;
+  width: 10rem;
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
+.linkPub {
+  color: blue;
+  text-decoration: underline;
+}
+.linkPubJL {
+  color: red;
+  text-decoration: underline;
+}
+.linkPubO {
+  color: orangered;
+  text-decoration: underline;
+}
+.popupJL .pubClose {
+  position: absolute;
+  left: 310px;
+  top: -50px;
+}
+
+.pubClose {
+  position: absolute;
+  left: 880px;
+  top: -58px;
+}
+.popupO .pubClose {
+  top: 22px;
+}
+.popupPub {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.popupPub .popup_inner {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  right: 0;
+  border: 0;
+  background-color: unset;
+}
+.popupJL {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.popupJL .popup_inner {
+  position: absolute;
+  left: 37%;
+  top: 25%;
+  right: 0;
+  border: 0;
+  background-color: unset;
+}
+.popupJL .popup_inner img {
+  width: 400px;
+}
+
+.popupO {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.popupO .popup_inner {
+  position: absolute;
+  left: 20%;
+  top: 8%;
+  right: 0;
+  border: 0;
+  background-color: unset;
+}
+.popupO .popup_inner img {
+  width: 1000px;
+}
