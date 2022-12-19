@@ -8,5 +8,6 @@ button {
 .modalBackground {
   cursor: url(./assets/cursor-hot.png), auto;
 }
-
-
+.linkPub {
+  cursor: url(./assets/cursor-link.png), auto;
+}

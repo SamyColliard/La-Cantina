@@ -1,14 +1,32 @@
-import Header from "./header";
-import pub from "../assets/rencontres-senior.png";
 import "./description.css";
 import { Cards, Cards1, Cards2 } from "./cards";
-const Description = () => {
+import pub from "../assets/rencontres-senior.png";
+import jl from "../assets/JL.png";
+import davidO from "../assets/DarkO.png";
+import Characters from "../screens/charactersTatooine";
+const Description = ({ charactersInfo, charactersInfo1, charactersInfo2 }) => {
   function hidePopUp() {
     const popUpBlock = document.querySelector(".popupPub");
     popUpBlock.classList.add("hide");
   }
   function showPopUp() {
     const popUpBlock = document.querySelector(".popupPub");
+    popUpBlock.classList.remove("hide");
+  }
+  function hidePopUpJL() {
+    const popUpBlock = document.querySelector(".popupJL");
+    popUpBlock.classList.add("hide");
+  }
+  function showPopUpJL() {
+    const popUpBlock = document.querySelector(".popupJL");
+    popUpBlock.classList.remove("hide");
+  }
+  function hidePopUpO() {
+    const popUpBlock = document.querySelector(".popupO");
+    popUpBlock.classList.add("hide");
+  }
+  function showPopUpO() {
+    const popUpBlock = document.querySelector(".popupO");
     popUpBlock.classList.remove("hide");
   }
   return (
@@ -21,8 +39,24 @@ const Description = () => {
           <img src={pub} />
         </div>
       </div>
+      <div className="popupJL hide">
+        <div className="popup_inner">
+          <p className="pubClose" onClick={hidePopUpJL}>
+            X
+          </p>
+          <img src={jl} />
+        </div>
+      </div>
+      <div className="popupO hide">
+        <div className="popup_inner">
+          <p className="pubClose" onClick={hidePopUpO}>
+            X
+          </p>
+          <img src={davidO} />
+        </div>
+      </div>
       <div className="div1">
-        <Cards />
+        <Cards src={charactersInfo.image} />
         <p>
           <span className="letter-style">T</span>atooine était un monde
           désertique situé dans le secteur Arkanis sur le Territoires de la
@@ -30,7 +64,10 @@ const Description = () => {
           <span className="linkPub" onClick={showPopUp}>
             x
           </span>
-          térieure (pas à l’intérieur du coup). Des fossiles de diabétique
+          térieure (pas à l’intérieur du coup).{" "}
+          <span className="linkPubJL" onClick={showPopUpJL}>
+            Des fossiles de diabétique
+          </span>{" "}
           laissaient penser aux scientifiques que Tatooine avait été{" "}
           <span className="linkPub" onClick={showPopUp}>
             recouverte
@@ -40,7 +77,10 @@ const Description = () => {
       </div>
       <div className="div1">
         <p>
-          La planète fut colonisée par un certain Davido{" "}
+          La planète fut colonisée par un certain{" "}
+          <span className="linkPubO" onClick={showPopUpO}>
+            Davido
+          </span>{" "}
           <span className="linkPub" onClick={showPopUp}>
             corp
           </span>
@@ -57,10 +97,10 @@ const Description = () => {
           </span>
           ie et le fief du Hutt Jabba Desilijic Tiure.
         </p>
-        <Cards1 />
+        <Cards1 src={charactersInfo1.image} />
       </div>
       <div className="div1">
-        <Cards2 />
+        <Cards2 src={charactersInfo2.image} />
         <p>
           La planète est également deve
           <span className="linkPub" onClick={showPopUp}>

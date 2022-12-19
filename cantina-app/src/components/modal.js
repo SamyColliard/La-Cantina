@@ -1,8 +1,8 @@
 import React from "react";
 import "./modal.css";
-import c3pCute from "../assets/c3p-cute.jpg"
-import jabba from "../assets/Jabba.png"
-import luke from "../assets/luke.png"
+import c3pCute from "../assets/c3p-cute.jpg";
+import jabba from "../assets/Jabba.png";
+import luke from "../assets/luke.png";
 
 function Modal({ setOpenModal }) {
   return (
@@ -18,11 +18,10 @@ function Modal({ setOpenModal }) {
           </button>
         </div>
         <div className="title">
-          <h1>name of person</h1>
+          <h1>C-3PO</h1>
         </div>
-        <div className="body">
-        <img className="imgHot" src={c3pCute}/>
-          <p></p>
+        <div className="module">
+          <img className="imgHot" src={c3pCute} />
         </div>
         <div className="footer">
           <button
@@ -53,11 +52,10 @@ function Modal1({ setOpenModal }) {
           </button>
         </div>
         <div className="title">
-          <h1>name of person</h1>
+          <h1>Jabba Desilijic Tiure</h1>
         </div>
-        <div className="body">
-        <img className="imgHot" src={jabba}/>
-          <p></p>
+        <div className="module">
+          <img className="imgHot" src={jabba} />
         </div>
         <div className="footer">
           <button
@@ -88,11 +86,10 @@ function Modal2({ setOpenModal }) {
           </button>
         </div>
         <div className="title">
-          <h1>name of person</h1>
+          <h1>Luke Skywalker</h1>
         </div>
-        <div className="body">
-        <img className="imgHot" src={luke}/>
-          <p></p>
+        <div className="module">
+          <img className="imgHot" src={luke} />
         </div>
         <div className="footer">
           <button
@@ -109,4 +106,4 @@ function Modal2({ setOpenModal }) {
   );
 }
 
-export {Modal, Modal1, Modal2};
+export { Modal, Modal1, Modal2 };
